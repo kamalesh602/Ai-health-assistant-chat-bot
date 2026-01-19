@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>AI Health Assistant</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div class="chat-wrapper">
+  <div class="chat-header">
+    <div class="bot-info">
+      <div class="bot-avatar">🩺</div>
+      <div>
+        <h3>AI Health Assistant</h3>
+        <span class="status">Online</span>
+      </div>
+    </div>
+  </div>
+
+  <div id="chatBox" class="chat-body"></div>
+
+  <div class="chat-footer">
+    <input
+      type="text"
+      id="userInput"
+      placeholder="Ask a health question..."
+      onkeypress="handleKey(event)"
+    />
+    <button onclick="sendMessage()">➤</button>
+  </div>
+
+  <div class="disclaimer">
+    ⚠️ This chatbot provides general wellness information only.
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
